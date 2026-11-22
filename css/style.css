@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333333;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+header {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #ADD8E6;
+}
+
+nav {
+    display: flex;
+    gap: 28px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #005f80;
+}
+
+section {
+    padding: 40px;
+    min-height: 400px;
+    border-bottom: 1px solid #dddddd;
+    scroll-margin-top: 80px;
+}
+
+.page {
+    display: none;
+}
+
+.page.active {
+    display: block;
+}
+
+#accueil.active {
+    display: flex;
+}
+
+nav a.active {
+    background-color: #87CEEB;
+    color: #333333;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+footer {
+    z-index: 1000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #ADD8E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#accueil {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.photo-accueil img {
+    width: 400px;
+    height: auto;
+}
+
+.texte-accueil h2 {
+    margin-bottom: 1.5rem;
+}
+
+.texte-accueil p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.texte-accueil h1 {
+    font-size: 4rem;
+}
+
+.texte-accueil h2 {
+    opacity: 0.7;
+}
+
+.texte-accueil .deuxieme-texte {
+    opacity: 0.6;
+}
+
+#apropos h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+#apropos .formation {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+#apropos .objectifs {
+    margin-top: 5rem;
+}
+
+#apropos .monevolution,
+#apropos .formation-encours,
+#apropos .enfin {
+    margin-top: 0;
+}
+
+#apropos .formation-2018,
+#apropos .formation-2020,
+#apropos .formation-2023,
+#apropos .formation-2026 {
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+#apropos .court-terme,
+#apropos .moyen-terme,
+#apropos .long-terme,
+#apropos .etudes,
+#apropos .monparcours {
+    margin-top: 0;
+    margin-bottom: 0.7rem;
+}
+
+ul {
+    font-weight: bold;
+}
+
+#apropos .lycee,
+#apropos .isct,
+#apropos .univ,
+#apropos .igensia {
+    opacity: 0.7;
+}
+
+#apropos .formation-2018,
+#apropos .formation-2020,
+#apropos .formation-2023,
+#apropos .formation-2026,
+#apropos .formation-encours {
+    font-size: 1.3rem;
+}
+
+#apropos .lycee,
+#apropos .isct,
+#apropos .univ,
+#apropos .igensia {
+    font-size: 1rem;
+}
+
+#competences .langages {
+    display: flex;
+    gap: 100px;
+    justify-items: center;
+    margin-bottom: 8rem;
+}
+
+#competences .frameworks {
+    display: flex;
+    gap: 100px;
+    justify-items: center;
+    margin-top: 0;
+    margin-bottom: 8rem;
+}
+
+#competences .outils-environnements {
+    display: flex;
+    gap: 100px;
+    justify-items: center;
+    margin-top: 0;
+    margin-bottom: 8rem;
+}
+
+#competences .technologies-notions {
+    display: flex;
+    gap: 100px;
+    justify-items: center;
+    margin-top: 0;
+}
+
+#competences .partie-langages {
+    margin-bottom: 5rem;
+    font-size: 2rem;
+}
+
+#competences .partie-frameworks {
+    margin-bottom: 5rem;
+    font-size: 2rem;
+}
+
+#competences .partie-outils-environnements {
+    margin-bottom: 5rem;
+    font-size: 2rem;
+}
+
+#competences .partie-technologies-notions {
+    margin-bottom: 5rem;
+    font-size: 2rem;
+}
+
+#apropos a {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 8rem;
+}
+
+#contact .email,
+#contact .phone,
+#contact .linkedin,
+#contact .github {
+    margin-top: 0;
+    margin-bottom: 3rem;
+}
+
+#contact .location {
+    margin-top: 0;
+}
+
+.projets {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.projet1,
+.projet2,
+.projet3 {
+    border: 0.2px solid #999999;
+}
+
+.titre-soustitre-desc-tech-liens-1,
+.titre-soustitre-desc-tech-liens-2,
+.titre-soustitre-desc-tech-liens-3 {
+    border: 0.5px solid #999999;
+    width: 320px;
+    height: 300px;
+}
+
+.soustitre1,
+.soustitre2,
+.soustitre3 {
+    margin-bottom: 1.5rem;
+    opacity: 0.6;
+    font-size: 1.3rem;
+}
+
+.tech1,
+.tech2,
+.tech3 {
+    display: flex;
+    justify-content: center;
+    opacity: 0.7;
+    margin-bottom: 3rem;
+}
+
+.tech1 {
+    margin-top: 1rem;
+}
+
+.tech2 {
+    margin-top: 2rem;
+}
+
+.tech3 {
+    margin-top: 2rem;
+}
+
+.lien1,
+.lien2,
+.lien3 {
+    display: flex;
+    justify-content: center;
+}
+
+.projet1:hover,
+.projet2:hover,
+.projet3:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.12);
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        height: 100px;
+    }
+
+    nav {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        font-size: 0.8rem;
+    }
+
+    nav a.active {
+        padding: 6px 8px;
+    }
+
+    .projets {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #accueil {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .texte-accueil {
+        width: 100%;
+    }
+
+    .texte-accueil h1 {
+        font-size: 2rem;
+    }
+
+    .texte-accueil h2 {
+        font-size: 1.2rem;
+    }
+
+    .photo-accueil img {
+        width: 100%;
+        max-width: 300px;
+        height: auto;
+    }
+
+    #competences .langages,
+    #competences .frameworks,
+    #competences .outils-environnements,
+    #competences .technologies-notions{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .projets {
+        flex-wrap: wrap;
+    }
+}
