@@ -276,26 +276,30 @@ ul {
     display: flex;
     justify-content: center;
     opacity: 0.7;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .tech1 {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
 }
 
 .tech2 {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .tech3 {
-    margin-top: 2rem;
+    margin-top: 2.9rem;
 }
 
 .lien1,
 .lien2,
-.lien3 {
+.temporaire {
     display: flex;
     justify-content: center;
+}
+
+.temporaire {
+    color : #FF4500;
 }
 
 .projet1:hover,
